@@ -146,11 +146,11 @@
 
         <footer class="" >
           <ul class="nav justify-content-center border-bottom"  style="margin-top: 60px;">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-            <li class="nav-item"><a href="admin/" class="nav-link px-2 text-muted">Admin</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+            <li class="nav-item"><a href="{% url 'blogapp-home' %}" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="{% url 'blogapp-features' %}" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="{% url 'admin:index' %}" class="nav-link px-2 text-muted">Admin</a></li>
+            <li class="nav-item"><a href="{% url 'blogapp-faq' %}" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="{% url 'blogapp-about' %}" class="nav-link px-2 text-muted">About</a></li>
           </ul>
           <p class="text-center text-muted">&copy; Desphixs 2021</p>
         </footer>

@@ -17,7 +17,11 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 def about(request):
     return render(request, 'about.html', {'title': "About Page"})
 
+def features_view(request):
+    return render(request, 'features.html', {'title': "Features"})
 
+def FAQs(request):
+    return render(request, 'faq.html', {'title': "FAQs"})
 
 class PostListView(LoginRequiredMixin, ListView):
     model = Post
@@ -28,10 +32,12 @@ class PostListView(LoginRequiredMixin, ListView):
 
 class PostDetailView(LoginRequiredMixin, DetailView):
     model = Post
+    template_name = 'blogapp/post_detail.html'
 
 
 class PostCreateView(LoginRequiredMixin, CreateView):
     model = Post
+    template_name = 'blogapp/post_form.html'
     fields = ['title', 'content']
 
     def form_valid(self, form):

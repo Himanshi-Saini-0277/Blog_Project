@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="container" style="background: white; padding: 20px; margin-top: 10px; border-radius: 20px;">
+        <h1 style="text-align: center;">Blog Features</h1>
+        <br>
+        <ul style="list-style-type: none; padding: 0;">
+            <li style="margin-bottom: 20px;">
+                <h3>1. User Authentication</h3>
+                <p>Secure user authentication system to protect your content. Only registered users can create, update, or delete posts.</p>
+            </li>
+            <li style="margin-bottom: 20px;">
+                <h3>2. Dynamic Post Management</h3>
+                <p>Create, edit, and delete posts with an intuitive interface. Posts are displayed in reverse chronological order, ensuring the latest content is always visible.</p>
+            </li>
+            <li style="margin-bottom: 20px;">
+                <h3>3. Crispy Forms Integration</h3>
+                <p>Forms are styled and managed effortlessly using Django Crispy Forms, making data entry smooth and user-friendly.</p>
+            </li>
+            <li style="margin-bottom: 20px;">
+                <h3>4. User Authorization</h3>
+                <p>Posts are linked to specific authors, ensuring that only the author of a post can make updates or deletions, enhancing content security.</p>
+            </li>
+            <li style="margin-bottom: 20px;">
+                <h3>5. Customizable UI</h3>
+                <p>The blog is designed with a customizable and responsive interface, making it accessible and visually appealing on all devices.</p>
+            </li>
+        </ul>
+    </div>
+{% endblock content %}
